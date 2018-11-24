@@ -1,0 +1,87 @@
+.text-white{
+  color: $whiteColor !important;
+}
+
+.text-orange{
+  color: $orangeColor;
+}
+.txt-dark-gray{
+  color: $darkGray;
+}
+.middle-text{
+  font-size: $middleSize;
+}
+
+.large-text{
+  font-size: $largeSize;
+}
+.ml-4{
+  margin-left: 40px !important;
+}
+.mt-3{
+  margin-top: 30px;
+}
+.mt-2{
+  margin-top: 20px !important;
+}
+.mb-25{
+  margin-bottom: 25px;
+}
+.bg-transparent{
+  background-color: $transparentColor;
+}
+.bg-gray{
+  background-color: $lightGray;
+}
+.sign-form-control{
+  padding: 1.375rem 1rem !important;
+  font-size: 1.8rem !important;
+  border: 1px solid $transparentColor !important;
+  border-radius: 0 !important;
+  }
+.btn{
+  font-size: 1.8rem !important;
+}
+.btn-orange{
+  background-color: $orangeColor;
+}
+.btn-size{
+  width: 100%;
+}
+.btn-padding{
+  padding: 1.375rem 1rem !important;
+}
+.btn-radius{
+  border-radius: 0 !important;
+}
+.btn-shadow{
+  box-shadow: 4px 6px 5px rgba(0,0,0,.16)!important;
+}
+.mb-100{
+  margin-bottom: 100px;
+}
+
+.pt-120{
+ padding-top: 120px;
+}
+.pb-100{
+  padding-bottom: 100px;
+ }
+.text-gray{
+  color: $grayColor;
+}
+.mb-50{
+  margin-bottom: 50px;
+}
+.px-20{
+  padding-left:20px;
+  padding-right: 20px;
+}
+.btn-more{
+  max-width: 250px;
+  display: block;
+  margin: auto;
+}
+
+
+
