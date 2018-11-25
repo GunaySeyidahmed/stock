@@ -32,35 +32,30 @@
            </div>
        </div>
        <div class="container">
-           <nav class="navbar navbar-expand-lg bg-transparent">
+           <nav class="navbar navbar-expand-lg">
                <a class="navbar-brand text-white large-text" href="#">Stockito<span class="text-orange">.</span></a>
-               <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">-->
-                   <div class="navToggle" data-toggle="collapse" data-target="#navbarNavDropdown">
-                       <div class="icon"></div>
-                       <div class="icon"></div>
-                       <div class="icon"></div>
-                   </div>
-               <!--</button>-->
-               <!--<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">-->
-               <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                   <ul class="navbar-nav">
-                       <li class="nav-item active ml-4">
+               <div class="navToggle">
+                   <div class="icon"></div>
+                   <div class="icon"></div>
+                   <div class="icon"></div>
+               </div>
+               <ul class="navbar-nav list-parent">
+                   <li class="nav-item active ml-4">
                            <a class="nav-link text-white" href="#">ABOUT US</a>
                        </li>
-                       <li class="nav-item ml-4">
+                   <li class="nav-item ml-4">
                            <a class="nav-link text-white" href="#">SERVICES</a>
                        </li>
-                       <li class="nav-item ml-4">
+                   <li class="nav-item ml-4">
                            <a class="nav-link text-white" href="#">PRICING</a>
                        </li>
-                       <li class="nav-item ml-4">
+                   <li class="nav-item ml-4">
                            <a class="nav-link text-white" href="#">CONTACT</a>
                        </li>
-                       <li class="nav-item ml-4">
+                   <li class="nav-item ml-4">
                            <a class="nav-link text-white" href="#">BLOG</a>
                        </li>
-                   </ul>
-               </div>
+               </ul>
            </nav>
        </div>
    </div>
@@ -218,7 +213,7 @@
     </section>
     <div class="clearfix"></div>
     <section class="testimonials-section bg-gray pt-120 pb-100">
-                <h2 class="large-text text-center text-gray mb-100">What people say about us</h2>
+                <h2 class="page-title large-text text-center text-gray mb-100">What people say about us</h2>
                 <div class="testimonials mb-100">
                         <div class="testimonial-info">
                             <div class="testimonial-text">
@@ -262,16 +257,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="testimonial-video">
-                            <!--<div class="movie-video" style="background:url('img/video-bg.png') center no-repeat; width: 100%;height: 500px">-->
-                                <!--<i class="material-icons movie-play text-white" data-video="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" data-cover="img/video-bg.png">&#xe039;</i>-->
-                            <!--</div>-->
-                            <video class="video" id="video1" poster="img/video-bg.png">
-                                <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg" />
-                                <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
-                                <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" type="video/webm" />
-                            </video>
-                            <a class="video-control js-video-control paused" href="#" data-video="video1"></a>
+                        <div class="testimonial-image">
+                            <img src="img/video-bg.png" alt="img testm" class="img-fluid">
                         </div>
                 </div>
                 <button class="btn btn-more btn-orange text-white btn-size btn-shadow btn-padding btn-radius">Get Started</button>

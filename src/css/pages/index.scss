@@ -134,13 +134,13 @@
 .testimonials-section{
   .testimonials{
     display: flex;
+    align-items: center;
     .testimonial-info{
       flex: 1;
       padding-right: 100px;
       .testimonial-text{
-        //display: flex;
-        //flex-wrap: wrap;
-        //align-items: center;
+        display: flex;
+        align-items: center;
         margin-left: 60px;
         .customer-img{
           flex: 0 0 12%;
@@ -160,52 +160,12 @@
         }
       }
     }
-    .testimonial-video{
+    .testimonial-image{
       flex: 1;
-      .movie-video{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .movie-play{
-          font-size: 8.2rem;
-        }
       }
     }
-  }
-}
 
-@media (max-width: 568px) {
-  .services{
-    .service{
-      flex-direction: column !important;
-    }
-  }
-  .options{
-    flex-wrap: wrap;
-    justify-content: space-around !important;
-    //justify-content: space-between;
-    .option {
-      flex: 0 0 30% !important;
-      max-width: 30% !important;
-      margin-bottom: 25px;
-    }
-  }
-  .customer{
-    padding-right: 5px !important;
-  }
-  .customer-title{
-    font-size: 2.6rem !important;
-  }
-  .customer-amount{
-    font-size: 1.4rem !important;
-  }
-  .btn-padding,.sign-form-control {
-    font-size: 1.4rem!important;
-    padding: 1.075rem 1rem!important;
-  }
-  .sign-up p{
-    font-size: 1.6rem !important;
-  }
+
 }
 
 @media (max-width: 992px) {
@@ -237,6 +197,10 @@
   .customer{
     padding-right: 5px !important;
   }
+  .testimonial-text {
+    flex-direction: column !important;
+    margin-bottom: 20px !important;
+  }
   .customer-title{
     font-size: 2.6rem !important;
   }
@@ -252,9 +216,9 @@
   }
 }
 @media (max-width: 1200px) {
-  .customer-text{
-    padding-left: 30px !important;
-  }
+  //.customer-text{
+  //  padding-left: 30px !important;
+  //}
 
 }
 @media (max-width: 768px) {
@@ -275,14 +239,14 @@
       font-size: 2.2rem !important;
     }
   }
-
   .options{
-  display: block !important;
-    margin-bottom: 50px;
-    .option{
-      flex: 0 0 100% !important;
-      max-width: 100% !important;
-      height: 100% !important;
+    flex-wrap: wrap;
+    justify-content: space-around !important;
+    //justify-content: space-between;
+    .option {
+      flex: 0 0 48% !important;
+      max-width: 48% !important;
+      margin-bottom: 25px;
     }
   }
   .page-title{
@@ -292,63 +256,59 @@
     font-size: 3rem !important;
 
   }
+  .testimonials{
+    flex-direction: column-reverse !important;
+    .customer-text
+    {
+      max-width: 100% !important;
+    }
+  }
 }
-
+@media (max-width: 568px) {
+  .services{
+    .service{
+      flex-direction: column !important;
+    }
+  }
+  .options{
+    display: block !important;
+    margin-bottom: 50px;
+    .option{
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      height: 100% !important;
+    }
+  }
+  .testimonials{
+    margin-bottom: 50px !important;
+  }
+  .testimonial-info{
+    padding-right: 0 !important;
+  }
+  .testimonial-text{
+    margin-left: 0 !important;
+  }
+  .customer{
+    padding-right: 5px !important;
+  }
+  .customer-title{
+    font-size: 2.6rem !important;
+  }
+  .customer-amount{
+    font-size: 1.4rem !important;
+  }
+  .btn-padding,.sign-form-control {
+    font-size: 1.4rem!important;
+    padding: 1.075rem 1rem!important;
+  }
+  .sign-up p{
+    font-size: 1.6rem !important;
+  }
+  .video{
+    height: 300px !important;
+  }
+}
 /*video*/
-.video {
-  margin: -60px auto 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  height: 500px;
 
-  &:hover {
-    + .video-control {
-      opacity: 0.8;
-    }
-  }
-}
 
-.video-control {
-  font-size: 8rem;
-  transition: opacity 0.3s;
-  color: $whiteColor;
-  text-align: center;
-  &:before, &:after {
-     position: absolute;
-     width: 1em;
-     height: 1em;
-     top: 50%;
-     left: 50%;
-     margin: -0.5em 0 0 -0.5em;
-   }
-&:hover{
-  color: $whiteColor;
-}
-  &:before {
-    font-family: "Material Icons";
-    content: '\e039';
-
-  }
-
-  &:after {
-    font-family: "Material Icons";
-    content: 'pause_circle_outline';
-  }
-
-  &.paused {
-    &:after {
-      opacity: 0;
-    }
-  }
-
-  &.playing {
-    &:before {
-      opacity: 0;
-    }
-  }
-
-}
 
