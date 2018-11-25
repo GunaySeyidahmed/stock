@@ -5,6 +5,16 @@
 .text-orange{
   color: $orangeColor;
 }
+.text-blue{
+  color: $blueColor;
+}
+.border-gray{
+  border: 1px solid $darkGray !important;
+}
+.watch-title{
+  font-family: $poppinsMedium;
+  font-size: 2rem;
+}
 .txt-dark-gray{
   color: $darkGray;
 }
@@ -36,8 +46,12 @@
 .sign-form-control{
   padding: 1.375rem 1rem !important;
   font-size: 1.8rem !important;
-  border: 1px solid $transparentColor !important;
+  border: 1px solid $transparentColor;
   border-radius: 0 !important;
+  &:focus{
+    outline: 0;
+    box-shadow: none;
+  }
   }
 .btn{
   font-size: 1.8rem !important;

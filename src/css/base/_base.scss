@@ -32,9 +32,9 @@ body{
 	font-family: $poppinsRegular;
 }
 
-//@media (min-width: 1200px) {
-//	.container {
-//		max-width: 1170px;
-//	}
-//}
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1170px;
+	}
+}
 

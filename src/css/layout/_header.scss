@@ -3,6 +3,7 @@
   //width: 100%;
   //float: left;
  .top-menu{
+   padding: 5px 0;
    background-color: $orangeColor;
    .call{
      display: flex;
@@ -14,6 +15,9 @@
      }
    }
  }
+  nav{
+    z-index: 5 !important;
+  }
 }
 .navbar{
   display: flex;
