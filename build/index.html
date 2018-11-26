@@ -236,10 +236,6 @@
                                     <p class="txt-dark-gray">
                                         “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat
                                         enim et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt
-                                        volutpat erat."- Anna Carole, Day Trader, Los Angels. “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat
-                                        enim et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt
-                                        volutpat erat."- Anna Carole, Day Trader, Los Angels. “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat
-                                        enim et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt
                                         volutpat erat."- Anna Carole, Day Trader, Los Angels.
                                     </p>
                                 </div>
@@ -351,7 +347,80 @@
 </main>
         <footer>
             <div class="footer-section pt-120 pb-100 bg-footer-color">
-                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque culpa distinctio doloribus ea error est eum exercitationem expedita illum iste laborum maiores maxime modi nam non nostrum numquam quas quidem quis quo repellendus reprehenderit sequi tempora ut vel velit, voluptate? At corporis dignissimos, dolor nam neque obcaecati quam, qui quisquam sint totam, ut velit veritatis.</p>
+               <div class="container">
+                   <div class="footer-links pb-50">
+                       <div class="footer-link pr-50">
+                           <h3 class="footer-link-title">About Us</h3>
+                           <ul class="footer-list list-unstyled">
+                               <li><a href="#">Why us?</a></li>
+                               <li><a href="#">Our History</a></li>
+                               <li><a href="#">Our Research Team</a></li>
+                               <li><a href="#">FAQs</a></li>
+                               <li><a href="#">Bullion Commodity Premier</a></li>
+                               <li><a href="#">HNI Consult</a></li>
+                               <li><a href="#">Commodity Delivery</a></li>
+                               <li><a href="#">Nify Premier</a></li>
+                           </ul>
+                       </div>
+                       <div class="footer-link pr-50">
+                           <h3 class="footer-link-title">Services</h3>
+                           <ul class="footer-list list-unstyled">
+                               <li><a href="#">Stock Futures</a></li>
+                               <li><a href="#">Options Futures</a></li>
+                               <li><a href="#">Our Research Team</a></li>
+                               <li><a href="#">Bullion Commodities</a></li>
+                               <li><a href="#">Gold/ Silver</a></li>
+                               <li><a href="#">Base Metals</a></li>
+                               <li><a href="#">Nify Premier</a></li>
+                               <li><a href="#">Options Premier</a></li>
+                           </ul>
+                       </div>
+                       <div class="footer-link pr-50">
+                           <h3 class="footer-link-title">Blog</h3>
+                           <ul class="footer-list list-unstyled">
+                               <li><a href="#">SGX Intraday</a></li>
+                               <li><a href="#">Malasian Shares</a></li>
+                               <li><a href="#">Intraday</a></li>
+                               <li><a href="#">Stock Cash</a></li>
+                               <li><a href="#">Intraday Pack</a></li>
+                               <li><a href="#">Nifty F&O Pack</a></li>
+                               <li><a href="#">Stock Cash</a></li>
+                               <li><a href="#">Forex Spot</a></li>
+                               <li><a href="#">HNI Consult</a></li>
+                           </ul>
+                       </div>
+                       <div class="footer-link-contact">
+                           <h3 class="footer-link-title">Contact</h3>
+                           <ul class="footer-contact-list list-unstyled">
+                               <li><a href="#">98 West 21th Street,
+                                   Suite 721 New York NY 10016</a></li>
+                               <li><a href="#">+ 1235 2355 98</a></li>
+                               <li><a href="#">info@yoursite.com</a></li>
+                               <li class="position-relative mt-25">
+                                   <div id="map"></div>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+                   <div class="footer-bottom">
+                       <div class="footer-social">
+                           <h3 class="footer-social-title mr-50">Follow us on </h3>
+                           <ul class="social-list list-unstyled">
+                               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                           </ul>
+                       </div>
+                       <div class="footer-copyright pr-50">
+                           <ul class="copyright-list list-unstyled">
+                               <li><a href="#">Privacy Policy</a></li>
+                               <li><a href="#">Terms and Conditions</a></li>
+                               <li><a href="#">Copyright 2017</a></li>
+                               <li><a href="#">All rights reserved</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -367,5 +436,27 @@
         ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
       </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        <script>
+            function initMap() {
+                var _position = {lat: 40.414483, lng: 49.8558967};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 13,
+                    center: _position,
+                    disableDefaultUI: true,
+                    streetViewControl: false,
+                    zoomControl: false,
+                });
+                var marker = new google.maps.Marker({
+                    position: _position,
+                    map: map,
+                    icon: {
+                        url: "img/location_on.png",
+                    }
+                });
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvRF6OqEKBlvoCCAWo30nK2Pg-X0CPkkc&callback=initMap">
+        </script>
 </body>
 </html>

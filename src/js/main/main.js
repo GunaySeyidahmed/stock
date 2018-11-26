@@ -24,5 +24,6 @@ $( document ).ready(function() {
         $(this).parent().toggleClass("active");
         $('.header-section .top-menu').toggleClass('d-none');
         $('.main-section').toggleClass('d-none');
+        $('footer').toggleClass('d-none');
     });
 });
